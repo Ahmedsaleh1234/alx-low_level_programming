@@ -1,4 +1,6 @@
 #include "main.h"
+#include <unistd.h>
+#include <stdio.h>
 /**
 *main - function prints text as output
 *
@@ -8,7 +10,8 @@
 int main(void)
 {
 char c[] = "_putchar";
-for (int i = 0 ; i < 9 ; i++)
+int i;
+for (i = 0 ; i < 9 ; i++)
 {
 _putchar(c[i]);
 }
