@@ -23,7 +23,7 @@ total++;
 }
 total++;
 
-a = malloc(total * sizeof(char));
+a = malloc(total *sizeof(char));
 if (a == NULL)
 return (NULL);
 
