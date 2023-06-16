@@ -10,19 +10,22 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-int *m;
-m = calloc(nmemb, size);
+void *mem;
+char *filler;
+unsigned int i;
+
 if (nmemb == 0 || size == 0)
-{
 return (NULL);
-}
-else if (m == NULL)
-{
+
+mem = malloc(size * nmemb);
+
+if (mem == NULL)
 return (NULL);
-}
-else
-{
-return (m);
-}
+
+filler = mem;
+
+for (i = 0; i < (size * nmemb); i++)
+filler[i] = '\0';
+return (mem);
 
 }
