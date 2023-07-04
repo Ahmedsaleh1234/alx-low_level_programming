@@ -21,6 +21,6 @@ tmp = p;
 p = p->next;
 free(tmp);
 }
-p = NULL;
+*head = NULL;
 
 }
