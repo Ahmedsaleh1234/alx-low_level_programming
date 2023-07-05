@@ -40,5 +40,6 @@ i++;
 c = c->next;
 }
 }
-return (newnode);
+free(newnode);
+return (NULL);
 }
