@@ -22,6 +22,7 @@ if (!idx)
 newnode->n = n;
 newnode->next = NULL;
 *head = newnode;
+return (NULL);
 }
 else
 {
@@ -32,12 +33,13 @@ if (i == idx - 1)
 newnode->n = n;
 newnode->next = c->next;
 c->next = newnode;
+return (newnode);
 }
 i++;
 c = c->next;
 }
 }
 free(newnode);
-return (newnode);
+return (NULL);
 
 }
