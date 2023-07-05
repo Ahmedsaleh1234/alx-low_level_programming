@@ -27,16 +27,16 @@ else
 {
 while (c)
 {
-if (i == idx-1)
+if (i == idx - 1)
 {
 newnode->n = n;
 newnode->next = c->next;
-c->next= newnode;
+c->next = newnode;
 }
 i++;
 c = c->next;
 }
 }
 return (newnode);
-free (newnode);
+free(newnode);
 }
