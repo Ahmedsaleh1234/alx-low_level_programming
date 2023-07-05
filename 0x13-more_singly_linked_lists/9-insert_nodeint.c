@@ -22,7 +22,7 @@ if (!idx)
 newnode->n = n;
 newnode->next = NULL;
 *head = newnode;
-return (NULL);
+return (newnode);
 }
 else
 {
