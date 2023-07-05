@@ -15,6 +15,7 @@ i = 0;
 newnode = malloc(sizeof(listint_t));
 if (!head || !newnode)
 {
+free(newnode);
 return (NULL);
 }
 if (!idx)
@@ -39,7 +40,5 @@ i++;
 c = c->next;
 }
 }
-free(newnode);
-return (NULL);
-
+return (newnode);
 }
