@@ -14,7 +14,7 @@ int fd;
 char *buf;
 i = 0;
 fd = 0;
-if (!filename || !letters)
+if (!filename)
 {
 return (0);
 }
