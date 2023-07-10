@@ -13,17 +13,13 @@ int fd;
 
 char *buf;
 i = 0;
-fd = -1;
-if (!filename || !letters )
+
+if (!filename || !letters)
 {
 return (0);
 }
 buf = malloc(sizeof(char) * letters);
-if (!buf)
-{
-close(fd);
-return (0);
-}
+
 fd = open(filename, O_RDONLY);
 i = read(fd, buf, letters);
 write(1, buf, i);
