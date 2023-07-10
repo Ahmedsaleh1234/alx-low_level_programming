@@ -13,7 +13,7 @@ int fd;
 
 char *buf;
 i = 0;
-fd = 0;
+fd = -1;
 if (!filename)
 {
 return (0);
