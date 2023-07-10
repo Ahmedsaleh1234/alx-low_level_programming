@@ -35,5 +35,7 @@ return (0);
 }
 free(buf);
 close(fd);
+if (i < 0)
+return (0);
 return (i);
 }
