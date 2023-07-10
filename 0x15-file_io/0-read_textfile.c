@@ -14,7 +14,7 @@ int fd;
 char *buf;
 i = 0;
 fd = -1;
-if (!filename)
+if (!filename || !letters )
 {
 return (0);
 }
@@ -26,7 +26,7 @@ return (0);
 }
 fd = open(filename, O_RDONLY);
 i = read(fd, buf, letters);
-i = write(1, buf, i);
+write(1, buf, i);
 if (i < 0)
 {
 free(buf);
@@ -35,7 +35,5 @@ return (0);
 }
 free(buf);
 close(fd);
-if (i < 0)
-return (0);
 return (i);
 }
