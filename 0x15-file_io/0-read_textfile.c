@@ -12,6 +12,7 @@ ssize_t  i;
 int fd;
 
 char *buf;
+i = 0;
 fd = 0;
 if (!filename || !letters)
 {
