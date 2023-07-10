@@ -29,6 +29,10 @@ free(buf);
 close(fd);
 return (0);
 }
+if (fd == -1)
+{
+return (0);
+}
 free(buf);
 close(fd);
 return (i);
